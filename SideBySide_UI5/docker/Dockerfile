@@ -1,6 +1,10 @@
 # build environment
 FROM --platform=linux/amd64  node:current-slim as build
 ENV VERSION 0.1
+RUN cd home
+RUN ls
+RUN cd ..
+RUN cd dev
 RUN ls
 WORKDIR /app
 RUN ls
