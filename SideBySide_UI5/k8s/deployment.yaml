@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: fe-ui5-mssql
-          image: kenantelyakar/fe-ui5-mssql:latest # change to your docker account
+          image: kenantelyakar/fe-ui5-mssql:0.1 # change to your docker account
           imagePullPolicy: Always
           ports:
             - name: http
