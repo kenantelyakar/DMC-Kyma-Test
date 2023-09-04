@@ -4,7 +4,7 @@ ENV VERSION 0.1
 COPY . .
 WORKDIR /app
 RUN ls
-#COPY app/package.json ./
+COPY package.json /app/
 RUN npm install
 COPY . .
 RUN npm run-script build
